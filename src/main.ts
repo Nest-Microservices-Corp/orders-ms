@@ -26,7 +26,7 @@ async function bootstrap() {
   );
 
   await app.listen();
-
+  console.log('Submodule Order - Hello wordl');
   logger.log(`Orders App running port ::: ${ envs.port }`);
 }
 bootstrap();
