@@ -1,0 +1,7 @@
+const PRODUCT_MS = 'PRODUCT_MICROSERVICE';
+const NATS_SERVICE = 'NATS_SERVICE';
+
+export {
+    PRODUCT_MS,
+    NATS_SERVICE
+};
