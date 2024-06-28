@@ -11,6 +11,4 @@ COPY . .
 # RUN npx prisma generate
 # RUN npx prisma migrate dev
 
-EXPOSE 3000
-
-# hola
+EXPOSE 3004
