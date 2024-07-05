@@ -45,8 +45,8 @@ RUN yarn install --prod
 # *** BUILD PRODUCTION ***
 ######################################
 FROM node:21-alpine3.19 as prod
-ARG ORDERS_DATABASE_URL
-ENV DATABASE_URL=$ORDERS_DATABASE_URL
+# ARG ORDERS_DATABASE_URL
+# ENV DATABASE_URL=$ORDERS_DATABASE_URL
 COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/prisma ./prisma
 COPY --from=build /app/dist ./dist
