@@ -16,8 +16,8 @@ WORKDIR /app
 ARG ORDERS_DATABASE_URL
 ENV DATABASE_URL=$ORDERS_DATABASE_URL
 
-#imprimir el arg para ver el valor recibido
-RUN echo "database_url ::: $ORDERS_DATABASE_URL";
+#imprimir el arg para ver el valor recibido - luego quitar
+# RUN echo "database_url ::: $ORDERS_DATABASE_URL";
 
 # Copiar de deps los modulos de node
 COPY --from=deps /app/node_modules ./node_modules
